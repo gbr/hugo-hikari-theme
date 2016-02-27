@@ -4,7 +4,7 @@
     </figure>
     <div class="bio">
         {{ with .Site.Params.offcanvas.title }}
-        <h1>{{ . }}</h1>
+        <h1>{{ . | markdownify }}</h1>
         {{ end }}
         {{ with .Site.Params.offcanvas.bio }}
         <p>{{ . | markdownify }}</p>
