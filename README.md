@@ -66,3 +66,7 @@ This theme is released under the MIT license. For more information read the [Lic
 
 Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
 
+
+## TODO
+
+Add category and tag support
