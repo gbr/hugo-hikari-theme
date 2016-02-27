@@ -36,6 +36,16 @@
             <li><a target="_blank" href="{{ .Site.BaseURL }}index.xml">RSS feed</a></li>
         </ul>
 
+        <!--><h6>{{ Portfolio }}</h6>
+        {{ end }}
+
+        <ul>
+        {{ range .Site.Params.offcanvas.portfolio }}
+            <li><a target="_blank" href="{{ .url }}">{{ .name }}</a></li>
+        {{ end }}
+        </ul>
+        {{ end }}<-->
+
         {{ with .Site.Params.offcanvas.followme }}
         <h6>{{ . }}</h6>
         {{ end }}
@@ -44,6 +54,6 @@
         {{ range .Site.Params.offcanvas.socialnetworks }}
             <li><a target="_blank" href="{{ .url }}">{{ .name }}</a></li>
         {{ end }}
-        </ul>        
+        </ul>
     </nav>
 </div>
