@@ -6,3 +6,7 @@
 {{ "<!-- Syntax highlighting -->" | safeHTML }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+{{ "<!-- Reading time approximation -->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/Countable.js"></script>
+<script>Countable.renderReadTime(200, 'div[itemprop=articleBody]', '.reading-time');</script>
