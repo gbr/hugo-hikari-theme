@@ -389,15 +389,6 @@
       }
 
       return isEnabled
-    },
-
-    renderReadTime: function (wpm, fromElement, toElement) {
-      this.once($(fromElement)[0], function (counter) {
-        var estimatedRaw = counter.words / wpm,
-        minutes = Math.round(estimatedRaw);
-        var effectiveTime = (minutes < 1) ? "a few secs" : minutes + " min read";
-          $(toElement).html(effectiveTime);
-      });
     }
   }
 

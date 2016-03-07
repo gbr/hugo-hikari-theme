@@ -16,7 +16,7 @@
                     </h5>
                 </div>
                 <h1 class="page-title" itemprop="name headline">{{ .Title }}</h1>
-                <h5 class="reading-time"></h5>
+                <h5 class="js-reading-time"></h5>
                 <div itemprop="articleBody">
                     {{ .Content }}
                 </div>
@@ -45,5 +45,8 @@
     </div>
     
     {{ partial "js" . }}
+    
+    {{ "<!-- Reading time approximation -->" | safeHTML }}
+    <script>util.renderReadTime(200, 'div[itemprop=articleBody]', '.js-reading-time');</script>
 </body>
 </html>
